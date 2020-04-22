@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Udupukada</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="../app/public/footer.css">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../app/public/home.css">
+  <link rel="stylesheet" href="../app/public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../app/public/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../app/public/css/flaticon.css">
+  <link rel="stylesheet" href="../app/public/css/slicknav.css">
+  <link rel="stylesheet" href="../app/public/css/animate.min.css">
+  <link rel="stylesheet" href="../app/public/css/magnific-popup.css">
+  <link rel="stylesheet" href="../app/public/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../app/public/css/themify-icons.css">
+  <link rel="stylesheet" href="../app/public/css/slick.css">
+  <link rel="stylesheet" href="../app/public/css/nice-select.css">
+  <link rel="stylesheet" href="../app/public/css/style.css">
+
+
+</head>
+<style media="screen">
+.monospace {
+font-family: "Lucida Console", Courier, monospace;
+}
+</style>
+
+<body>
+
+  <header>
+          <!-- Header Start -->
+         <div class="header-area">
+              <div class="main-header ">
+
+                 <div class="header-bottom  header-sticky">
+                      <div class="container-fluid">
+                          <div class="row align-items-center">
+                              <!-- Logo -->
+                              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                                  <div class="logo">
+                                    <a href="/"><img src="../app/public/img/logo.png" alt=""></a>
+                                  </div>
+                              </div>
+                              <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+                                  <!-- Main-menu -->
+                                  <div class="main-menu f-right d-none d-lg-block">
+                                      <nav>
+                                          <ul id="navigation">
+                                              <li><a href="/">Home</a></li>
+
+                                              <li><a href="#about">About us</a>
+                                              </li>
+
+                                              <li><a href="/shopnow">Shopnow</a>
+
+                                              </li>
+                                              <li><a href="/contact">Contact</a></li>
+
+                                          </ul>
+
+                                      </nav>
+                                  </div>
+                              </div>
+                              <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                                  <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                                      <li class="d-none d-xl-block">
+                                          <div class="form-box f-right ">
+                                              <input type="text" name="Search" placeholder="Search products">
+                                              <div class="search-icon">
+                                                  <i class="fas fa-search special-tag"></i>
+                                              </div>
+                                          </div>
+                                       </li>
+                                      <% if (user) { %>
+                                      <li>
+                                          <div class="shopping-card">
+                                              <a href="/mycart"><i class="fas fa-shopping-cart"></i></a>
+                                          </div>
+                                      </li>
+                                      <li> <a href="userprofile"> <b style="color:#5c6066;"><%=user.name%></b> </a>
+                                      <a href="/users/logout" style="color:black;">Logout </a> </li>
+                                          <%    }  else { %>
+                                     <li class="d-none d-lg-block"> <a href="users/login" class="btn header-btn">Sign in</a></li>
+      <%      }%>
+                                  </ul>
+                              </div>
+                              <!-- Mobile Menu -->
+                              <div class="col-12">
+                                  <div class="mobile_menu d-block d-lg-none"></div>
+                              </div>
+                          </div>
+                      </div>
+                 </div>
+              </div>
+         </div>
+          <!-- Header End -->
+      </header>
+
+  <!--slider start-->
+  <section class="home">
+    <div class="slider">
+      <div class="slide active" style="background-image: url('slide-1.jpg');">
+        <div class="container">
+          <div class="caption">
+            <h1 class="monospace">Hello Welcome to</h1>
+            <img src="../app/public/img/logo.png" alt=""> <br>
+            <a style="background-color:#2577fd;" href="/shop">Add Your Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('slide-2.jpg');">
+        <div class="container">
+          <div class="caption">
+            <h1 class="monospace">Hello Welcome to</h1>
+              <img src="../app/public/img/logo.png" alt=""> <br>
+            <a style="background-color:#2577fd;" href="/shop">Add Your Shop</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('slide-3.jpg');">
+        <div class="container">
+          <div class="caption">
+            <h1 class="monospace">Hello Welcome to</h1>
+            <img src="../app/public/img/logo.png" alt=""> <br>
+            <a style="background-color:#2577fd;" href="/shopnow">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--controls-->
+    <div class="controls">
+      <div class="prev">
+        < </div>
+          <div class="next">></div>
+      </div>
+
+      <!--indicators-->
+      <div class="indicator"></div>
+  </section>
+  <!--slider end-->
+  <br> <br> <br> <br>
+
+  <section class="showroom">
+    <div class="heading monospace">Popular Show Rooms</div>
+    <div class="line"></div>
+    <br> <br>
+    <div class="row-1">
+      <% shop.forEach(function (shop){%>
+      <div class="wrap-column">
+         <img class="shop" src = "<%= shop.link %>">
+        <div class="details">
+          <h1><%= shop.shopname%> </h1>
+          <a href="/showroom/<%=shop.shopname%>">Visit Now</a>
+        </div>
+      </div>
+        <%}) %>
+    </div>
+  </section>
+
+  <footer id="about" class="footer-distributed">
+    <div class="footer-left">
+      <div class="logo">
+        <a href="/"><img style="width:200px; height:100ppx;" src="../app/public/img/logo.png" alt=""></a>
+      </div>
+      <p class="footer-links">
+        <a href="/">Home</a>
+        |
+        <a href="/shopnow">Shopnow</a>
+        |
+        <a href="#">About</a>
+        |
+        <a href="#">Contact</a>
+      </p>
+      <p class="footer-company-name">@ 2020 Udupukada</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <i style="background-color:#2577fd;" class="fa fa-map-marker"></i>
+        <p><span>Jaffna</span>
+          Srilanka</p>
+      </div>
+      <div>
+        <i style="background-color:#2577fd;" class="fa fa-phone"></i>
+        <p>077 419 2481</p>
+      </div>
+      <div>
+        <i style="background-color:#2577fd;" class="fa fa-envelope"></i>
+        <p><a href="udupukadai@gmail.com">udupukadai@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about monospace">
+        <span style="color:#484c54;">About the company</span>
+        Platform to bring the textiles to the online presence and customers can visit this website and buy their
+        favorite
+        clothes.</p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/udupukada.shop"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/udupukada/"><i class="fab fa-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Udupukada</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="../app/public/footer.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../app/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../app/public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../app/public/css/flaticon.css">
+    <link rel="stylesheet" href="../app/public/css/slicknav.css">
+    <link rel="stylesheet" href="../app/public/css/animate.min.css">
+    <link rel="stylesheet" href="../app/public/css/magnific-popup.css">
+    <link rel="stylesheet" href="../app/public/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../app/public/css/themify-icons.css">
+    <link rel="stylesheet" href="../app/public/css/slick.css">
+    <link rel="stylesheet" href="../app/public/css/nice-select.css">
+    <link rel="stylesheet" href="../app/public/css/style.css">
+
+    <link rel="stylesheet" href="cart.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<style media="screen">
+
+
+.imgc {
+  height: 100px;
+  width: 100px;
+  border-radius: 6px;
+}
+
+.box {
+  background-color: whitesmoke;
+  width: 500px;
+  height: auto;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+
+.row-3 {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+
+.wrap-column .back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.wrap-column:hover .back {
+    display: inline;
+}
+
+.wrap-column span {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wrap-column span:hover {
+    cursor: pointer;
+    color: rgb(4, 42, 85);
+    font-size: 16px;
+}
+
+.row-3 .h1 {
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-bottom: #000000 2px solid;
+    padding-left: 20px;
+}
+
+.wrap-column {
+    width: 30%;
+    height: max-content;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5px;
+    border-bottom: solid rgba(0, 0, 0, 0.493) 1px;
+}
+
+
+    /* Small Scren */
+
+@media(min-width: 992px) {
+    /*================================================================
+========================= image show in shopnow page ============================
+=================================================================*/
+    .wrap-column {
+        width: 33%;
+        height: max-content;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0px;
+        border-bottom: solid rgba(0, 0, 0, 0.493) 1px;
+    }
+    /*================================================================
+========================= slider ============================
+=================================================================*/
+    #slider figure img {
+        width: 20%;
+        float: left;
+        height: 325px;
+        border-radius: 10px;
+    }
+}
+</style>
+
+<body>
+  <header>
+          <!-- Header Start -->
+         <div class="header-area">
+              <div class="main-header ">
+
+                 <div class="header-bottom  header-sticky">
+                      <div class="container-fluid">
+                          <div class="row align-items-center">
+                              <!-- Logo -->
+                              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                                  <div class="logo">
+                                    <a href="/"><img src="../app/public/img/logo.png" alt=""></a>
+                                  </div>
+                              </div>
+                              <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+                                  <!-- Main-menu -->
+                                  <div class="main-menu f-right d-none d-lg-block">
+                                      <nav>
+                                          <ul id="navigation">
+                                              <li><a href="/">Home</a></li>
+
+                                              <li><a href="#about">About us</a>
+
+                                              </li>
+
+                                              <li><a href="/shopnow">Shopnow</a>
+
+                                              </li>
+                                              <li><a href="/contact">Contact</a></li>
+
+                                          </ul>
+
+                                      </nav>
+                                  </div>
+                              </div>
+                              <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                                  <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                                      <li class="d-none d-xl-block">
+                                          <div class="form-box f-right ">
+                                              <input type="text" name="Search" placeholder="Search products">
+                                              <div class="search-icon">
+                                                  <i class="fas fa-search special-tag"></i>
+                                              </div>
+                                          </div>
+                                       </li>
+                                      <% if (user) { %>
+                                      <li>
+                                          <div class="shopping-card">
+                                              <a href="/mycart"><i class="fas fa-shopping-cart"></i></a>
+                                          </div>
+                                      </li>
+                                      <li> <a href="userprofile"> <b style="color:#5c6066;"><%=user.name%></b> </a>
+                                      <a href="/users/logout" style="color:black;">Logout </a> </li>
+                                          <%    }  else { %>
+                                     <li class="d-none d-lg-block"> <a href="users/login" class="btn header-btn">Sign in</a></li>
+      <%      }%>
+                                  </ul>
+                              </div>
+                              <!-- Mobile Menu -->
+                              <div class="col-12">
+                                  <div class="mobile_menu d-block d-lg-none"></div>
+                              </div>
+                          </div>
+                      </div>
+                 </div>
+              </div>
+         </div>
+          <!-- Header End -->
+      </header>
+            <div class="row-3 box">
+                <% dress.forEach(function (dress){%>
+                  <div class="wrap-column">
+                    <div class="product-item">
+                    <div class="pi-pic">
+                    <p>
+                      <img style="height:480px; width:34px;   padding: 23px; border-radius:5px" src = "<%= dress.link %>"></p>
+                      <ul>
+
+                                      <li class="quick-view">
+                                                            <% if (user) { %>
+                                                           <button class="primary-btn checkout-btn" type="button" name="button" onclick="addcart('<%=dress._id%>')"
+                                                               style="color: black; background-color:white; border-radius: 4px;   margin: 4px 2px;  font-size: 16px; border: none; padding: 10px;">
+                                                                    Add to cart</button>
+
+                                                                <%    }  else { %>
+                                                                      <a href="/user/login" style="color:black;">Login to add this in your cart</a>
+                                                                    <%      }%>
+</li>
+                                      <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                  </ul>
+                                </div>
+
+
+                      <div class="pi-text">
+                                  <div class="catagory-name"><%= dress.dressname%> <%= dress.size%></div>
+
+                                  <div style="color:#2c3036;" class="product-price">
+                                  Rs  <%= dress.price%>
+
+                                  </div>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+                      <%}) %>
+            </div>
+
+
+        <footer class="page-footer">
+
+        </footer>
+    </div>
+    <script>
+      function addcart(id) {
+        $.ajax({
+          url:"/add_to_cart",
+          method: "POST",
+          data: {c_id: id},
+          success: function () {
+            alert('Added to cart');
+        }
+        })
+        console.log(id);
+      }
+    </script>
+</body>
+
+</html>

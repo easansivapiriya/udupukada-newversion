@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700|Montserrat:200,300,400,500,600,700,800,900');
+/*----font awesome -------*/
+@import url('../fonts/font-awesome/css/font-awesome.min.css');
+/*--------- flat-icon ---------*/
+@import url('../fonts/icon/font/flaticon.css');
+
+/*______________________ Global stlye ___________________*/
+
+ @font-face {
+  font-family: 'font-awesome';
+  src: url('../fonts/font-awesome/fonts/fontawesome-webfont.ttf');
+  src: url('../fonts/font-awesome/fonts/fontawesome-webfont.eot'), /* IE9 Compat Modes */
+       url('../fonts/font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/font-awesome/fonts/fontawesome-webfont.svg') format('svg'); /* Legacy iOS */
+ }
+
+ .ser{
+   background-color: #93b8e2;
+   padding: 10px;
+   margin: 5rem 0;
+ }
+
+ .container-1{
+   width: 90%;
+   margin: 0 auto;
+ }
+
+ .container-1 > h1, .title{
+   font-weight: 300 !important;
+   letter-spacing: 1px;
+ }
+
+ .container-1 > h1, .container-1 > p{
+   text-align: center;
+ }
+
+ .services{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 40px;
+ }
+
+ .service{
+   margin: 10px;
+   overflow: hidden;
+   padding: 35px 15px;
+   position: relative;
+   text-align: center;
+   transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+   width: 20%;
+ }
+
+ .service:hover{
+   background-color: #8e44ad;
+   transform: translateY(-3px);
+ }
+
+ .service::before{
+   content: '';
+   border-width: 20px;
+   border-style: solid;
+   border-color: #222f3e #222f3e rgba(1,1,1,0.4) rgba(0,0,0,0.4);
+   position: absolute;
+   right: -40px;
+   top: -40px;
+   transition: right 0.3s ease-out, top 0.3s ease-out;
+ }
+
+ .service:hover::before{
+   right: 0;
+   top: 0;
+ }
+
+ .service > i{
+   display: block;
+   color: #8e44ad;
+   font-size: 4rem;
+   margin-bottom: 0.9rem;
+   transition: color 0.3s ease-out;
+ }
+
+ .service > .title {
+   font-weight: 900;
+   font-size: 1.2rem;
+   line-height: 1.55rem;
+   margin-bottom: 1rem;
+   text-transform: capitalize;
+   transition: color 0.3s ease-out;
+ }
+
+ .service > .description{
+   line-height: 1.55rem;
+   margin: 0;
+   transition: color 0.3s ease-out;
+ }
+
+ .service:hover > i,
+ .service:hover > .title,
+ .service:hover > .description{
+  color: white;
+ }

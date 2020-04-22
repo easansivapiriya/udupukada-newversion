@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Udupukada</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="../app/public/footer.css">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="../app/public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../app/public/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../app/public/css/flaticon.css">
+  <link rel="stylesheet" href="../app/public/css/slicknav.css">
+  <link rel="stylesheet" href="../app/public/css/animate.min.css">
+  <link rel="stylesheet" href="../app/public/css/magnific-popup.css">
+  <link rel="stylesheet" href="../app/public/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="../app/public/css/themify-icons.css">
+  <link rel="stylesheet" href="../app/public/css/slick.css">
+  <link rel="stylesheet" href="../app/public/css/nice-select.css">
+  <link rel="stylesheet" href="../app/public/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="main.js"></script>
+</head>
+<style>
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 3px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea      {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #093a59;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.imgf {
+  height:480px;
+  width:1280px;
+}
+.box {
+  background-color: whitesmoke;
+  width: 500px;
+  height: auto;
+  padding: 5px;
+  margin: 2px;
+}
+
+
+
+.row-3 {
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.wrap-column img {
+
+    position: relative;
+}
+
+.wrap-column .back {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.wrap-column:hover .back {
+    display: inline;
+}
+
+.wrap-column span {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wrap-column span:hover {
+    cursor: pointer;
+    color: rgb(4, 42, 85);
+    font-size: 16px;
+}
+
+.row-3 .h1 {
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-bottom: #000000 2px solid;
+    padding-left: 20px;
+}
+
+.wrap-column {
+    width: 30%;
+    height: max-content;
+    box-sizing: border-box;
+    position: relative;
+    margin: 5px;
+    border-bottom: solid rgba(0, 0, 0, 0.493) 1px;
+}
+
+
+    /* Small Scren */
+
+@media(min-width: 992px) {
+    /*================================================================
+========================= image show in shopnow page ============================
+=================================================================*/
+    .wrap-column {
+        width: 33%;
+        height: max-content;
+        box-sizing: border-box;
+        position: relative;
+        margin: 0px;
+        border-bottom: solid rgba(0, 0, 0, 0.493) 1px;
+    }
+    /*================================================================
+========================= slider ============================
+=================================================================*/
+    #slider figure img {
+        width: 20%;
+        float: left;
+        height: 325px;
+        border-radius: 10px;
+    }
+}
+</style>
+
+<body>
+  <header>
+          <!-- Header Start -->
+         <div class="header-area">
+              <div class="main-header ">
+
+                 <div class="header-bottom  header-sticky">
+                      <div class="container-fluid">
+                          <div class="row align-items-center">
+                              <!-- Logo -->
+                              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-3">
+                                  <div class="logo">
+                                    <a href="/"><img src="../app/public/img/logo.png" alt=""></a>
+                                  </div>
+                              </div>
+                              <div class="col-xl-6 col-lg-8 col-md-7 col-sm-5">
+                                  <!-- Main-menu -->
+                                  <div class="main-menu f-right d-none d-lg-block">
+                                      <nav>
+                                          <ul id="navigation">
+                                              <li><a href="/">Home</a></li>
+
+                                              <li><a href="../#about">About Us</a>
+
+                                              </li>
+
+                                              <li><a href="/shopnow">Shopnow</a>
+
+                                              </li>
+                                              <li><a href="contact.html">Contact</a></li>
+
+                                          </ul>
+
+                                      </nav>
+                                  </div>
+                              </div>
+                              <div class="col-xl-5 col-lg-3 col-md-3 col-sm-3 fix-card">
+                                  <ul class="header-right f-right d-none d-lg-block d-flex justify-content-between">
+                                      <li class="d-none d-xl-block">
+                                          <div class="form-box f-right ">
+                                              <input type="text" name="Search" placeholder="Search products">
+                                              <div class="search-icon">
+                                                  <i class="fas fa-search special-tag"></i>
+                                              </div>
+                                          </div>
+                                       </li>
+
+                                      <li>
+                                          <div class="shopping-card">
+                                              <a href="/mycart"><i class="fas fa-shopping-cart"></i></a>
+                                          </div>
+                                      </li>
+
+
+                                     <li class="d-none d-lg-block"> <a href="users/login" class="btn header-btn">Sign in</a></li>
+
+                                  </ul>
+                              </div>
+                              <!-- Mobile Menu -->
+                              <div class="col-12">
+                                  <div class="mobile_menu d-block d-lg-none"></div>
+                              </div>
+                          </div>
+                      </div>
+                 </div>
+              </div>
+         </div>
+          <!-- Header End -->
+      </header>
+<img class="imgf" style="" src="<%= shop.link %>" alt="">
+<br> <br> <br>
+<div class="row-2">
+<h1 style="float: left; font-size: 111px; font-family:Serif;   padding-left:20%; color:#153c61;"><%= shop.shopname%> </h1>
+<br> <br>
+<div style="float:right; padding-right:10%; color:#153c61;">
+<p class="fa fa-home">      </p><%= shop.address%> <br> <br>
+<hr> <br>
+<p class="fa fa-phone">      </p> <%= shop.number%> <br> <br>
+<hr> <br>
+<p class="fa fa-heart">      Shop open time :</p> <%= shop.opentime%> <br> <br>
+<hr> <br>
+<p class="fa fa-bars">      Shop close time :</p> <%= shop.closetime%> <br> <br>
+<hr>
+</div>
+</div>
+</div>
+</center>
+</header> <br> <br>
+
+<div class="row-3 box">
+    <% dress.forEach(function (dress){%>
+      <div class="wrap-column">
+        <p class="boxi">
+          <img style="height: 400px;
+          width: 390px;
+          border-radius: 6px;" src = "<%= dress.link %>"></p>
+          <span> Dress type:    <%= dress.dressname%> </span>
+          <span>  Size:  <%= dress.size%></span>
+        </div>
+    <%}) %>
+</div>
+
+      </main>
+        <footer class="page-footer">
+
+        </footer>
+
+
+</body>
+
+</html>

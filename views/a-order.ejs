@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>udupukada admin</title>
+    <style>
+  th{
+    background-color: #0a4a8a;
+    color: white;
+  ;
+  }table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-radius: 0px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    width: 100px;}
+  table#t01 {
+    background-color: #F1F1C1
+  ;}
+
+  .container {
+    padding: 2px 16px;
+  }
+
+      </style>
+  </head>
+  <body>
+           <section class="header">
+                   <h1>Customer Order Details</h1>  <!--<div> <button class="bu"><a href="/Order">Order</a></button><br> </div>-->
+   <br>
+           </section>
+           <div class="container">
+           <table align="center" width="100%">
+                  <th>Name </th>
+                  <th>Order ID </th>
+                  <th>E-mail </th>
+                  <th>Address </th>
+                  <th>City </th>
+                  <th>Phone number  </th>
+                  <th>Dress details</th>
+
+                    <div>
+
+      <tr>
+    <% checkoutOrder.forEach(function (checkoutOrder){%>
+        <td> <%= checkoutOrder.user%> </td>
+        <td> <%= checkoutOrder._id%> </td>
+        <td> <%= checkoutOrder.email%> </td>
+        <td> <%= checkoutOrder.address%> </td>
+        <td> <%= checkoutOrder.city%> </td>
+        <td> <%= checkoutOrder.phone%> </td>
+      <td>    <% checkoutOrder.order.forEach(function (order){%>
+                <%= order._id%>
+               <%= order.price%>
+               <%= order.shopname%>
+
+                <%}) %> </td>
+      </tr>
+    <%}) %>
+    </div>
+  </div>
+    </table>
+  </body>
+</html>
