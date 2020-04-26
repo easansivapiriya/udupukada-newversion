@@ -228,7 +228,7 @@ a {
 {
     width: 150px;
     padding: 10px;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dotted #536098;
     background: transparent;
     border-radius: 0;
     text-align: left;
@@ -443,9 +443,9 @@ a {
   right: 0;
   top: 10%; /* Adjust this value to move the positioned div up and down */
   width: 100%;
-  color: black;
+  color: #536098;
   font-size: 4vh;
-  background-color: rgba(110, 31, 31, 0.548);
+  background-color: #536098;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -490,7 +490,7 @@ a {
     position:absolute;
     left:30%;
     top:17%;
-    font-family:'Raleway',sans-serif;
+    font-family:'Poppins',sans-serif;
    }
    /*define the close button*/
 
@@ -513,7 +513,7 @@ a {
    .form button{
      background-color: rgba(7, 7, 7, 0.5);
      color: white;
-     border: 2px solid black;
+     border: 2px solid #536098;
      width: 25vh;
      height: 7vh;
      display: block;
@@ -526,12 +526,12 @@ a {
    .form button:hover{
     background-color: rgba(7, 7, 7, 0);
     color: white;
-    border: 2px solid black;
+    border: 2px solid #536098;
   }
 
   .form a:hover{
     color: blanchedalmond;
-    text-decoration: 1px underline solid black;
+    text-decoration: 1px underline solid #536098;
     cursor: pointer;
   }
 
